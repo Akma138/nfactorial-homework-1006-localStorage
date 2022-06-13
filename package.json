@@ -1,0 +1,25 @@
+{
+  "name": "nfactorial-homework-1006-localstorage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "pushToGit": "git add . && git commit -m 'homework' && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akma138/nfactorial-homework-1006-localStorage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akma138/nfactorial-homework-1006-localStorage/issues"
+  },
+  "homepage": "https://github.com/Akma138/nfactorial-homework-1006-localStorage#readme",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}

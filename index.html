@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function setWhiteTheme(){
+    localStorage.setItem("theme","light" );
+    const root = document.getElementById("mainContainer")
+    root.className="light";
+  }
+  function setDarkTheme(){
+    localStorage.setItem("theme","dark" );
+    const theme = localStorage.getItem("theme");
+    const root = document.getElementById("mainContainer")
+    root.className="dark";
+  }
+ 
+  function getValue() {
+    const theme = localStorage.getItem("theme");
+    const root = document.getElementById("mainContainer")
+    root.className=theme;
+  }
+</script>
+<link rel="stylesheet" href="index.css">
+<body onload="getValue()">
+  <div id="mainContainer" style="width: 100vw; height: 100vh">
+    <h1>
+      <button onclick="setWhiteTheme()">
+       Set light theme
+      </button>
+      <button onclick="setDarkTheme()">
+        Set dark theme
+       </button>
+      <button>Cookies</button>
+    </h1>
+</body>
+</html>
